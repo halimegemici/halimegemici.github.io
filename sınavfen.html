@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BİLİM UZAYI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <!--MENÜ-->
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-rocket"></i>BİLİM UZAYI</a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="ders.html" class="desktop-link"><i class="fa fa-book" aria-hidden="true"></i>Dersler</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Dersler</label>
+              <ul>
+                <li><a href="mat.html">Matematik</a></li>
+                <li><a href="fen.html">Fen Bilimleri</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sinavlar.html"><i class="fa fa-calculator" aria-hidden="true"></i>Sınavlar</a>
+            </li>
+            <li>
+              <a href="dersnotlari.html"><i class="fa-solid fa-clipboard"></i>Ders Notları</a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><i class="fa fa-users" aria-hidden="true"></i>Hakkımızda</a>
+            </li>
+            <li>
+              <a href="iletisim.html"><i class="fa fa-phone" aria-hidden="true"></i>İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!--Search Bar-->
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Öğrenmeye Başla..." required>
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+    <!--Sorular-->
+    <div class="sinavimiz1">
+      <div class="board">
+        <h3 id="time">Süre:</h3>
+        <h3 id="point">Puan:</h3>
+        <p id="qp1">1</p>
+        <p id="qp2">2</p>
+        <p id="qp3">3</p>
+        <p id="qp4">4</p>
+        <p id="qp5">5</p>
+        <p id="qp6">6</p>
+        <p id="qp7">7</p>
+        <p id="qp8">8</p>
+        <p id="qp9">9</p>
+        <p id="qp10">10</p>
+      </div>
+      <div class="anasoru">
+        <div class="soru1">
+            <p> <strong>1)</strong></p>
+            <img src="sınavfen.png"><br>
+            <p>Yukarıdaki renkli şekillerde yazan ifadelerden hangileri doğa olayları sonucunda <strong>oluşur </strong>?</p><br>
+            <input type="radio" name="q3" value="Mavi, kahverengi" onclick="control(1,'Mavi, kahverengi')"> Mavi, kahverengi<br>
+            <input type="radio" name="q3" value="Yeşil, mavi, kırmızı"onclick="control(1,'Yeşil, mavi, kırmızı')"> Yeşil, mavi, kırmızı <br>
+            <input type="radio"name="q3"value="Sarı, yeşil, kırmızı, mavi"onclick="control(1,'Sarı, yeşil, kırmızı, mavi')"> Sarı, yeşil, kırmızı, mavi <br>
+            <input type="radio"name="q3" value="Kırmızı, yeşil, sarı, mor" onclick="control(1,'Kırmızı, yeşil, sarı, mor')"> Kırmızı, yeşil, sarı, mor <br>
+          </div>
+          <div class="soru1">
+            <p> <strong>2)</strong></p>
+            <img src="sınavfen1.png"><br>
+            <p>Bu olay aşağıdaki ifadelerden hangisinin sonucu <strong>oluşur?</strong></p><br>
+            <input type="radio" name="q4" value="Dünyanın Güneş etrafında dönmesiyle" onclick="control(2,'Dünyanın Güneş etrafında dönmesiyle')"> Dünyanın Güneş etrafında dönmesiyle <br>
+            <input type="radio" name="q4" value="Güneşin Dünya etrafında dönmesiyle"onclick="control(2,'Güneşin Dünya etrafında dönmesiyle')"> Güneşin Dünya etrafında dönmesiyle <br>
+            <input type="radio"name="q4"value="Dünyanın güneşe olan uzaklığı"onclick="control(2,' Dünyanın güneşe olan uzaklığı')"> Dünyanın güneşe olan uzaklığı <br>
+            <input type="radio"name="q4" value="Dünyanın kendi etrafında dönmesiyle" onclick="control(2,'Dünyanın kendi etrafında dönmesiyle')"> Dünyanın kendi etrafında dönmesiyle <br>
+          </div>
+          <div class="soru1">
+            <p><strong>3) <br>1. Gece gündüz oluşur.<br>
+              2. Sıcaklık farklılıkları oluşur. <br>
+              3. Güneş ışınları gün içerisinde farklı açılardan gelir. <br><br></strong>
+            Dünya kendi ekseni etrafında batıdan doğuya doğru sürekli döner. Yukarıdakilerden hangisi Dünya'nın kendi ekseni etrafındaki dönme hareketinin sonuçlarındandır ?</p><br>
+          <input type="radio" name="q1" value="'1 ve 2'" onclick="control(3,'1 ve 2')"> 1 ve 2 <br>
+          <input type="radio" name="q1" value="2 ve 3" onclick="control(3,'2 ve 3')"> 2 ve 3 <br>
+          <input type="radio" name="q1" value="1 ve 3" onclick="control(3,'1 ve 3')"> 1 ve 3 <br>
+          <input type="radio" name="q1" value= "1,2 ve 3"  onclick="control(3,'1,2 ve 3')"> 1,2 ve 3
+          </div>
+          <div class="soru1">
+            <p> <strong>4)</strong>Gece ve gündüzün eşit olduğu tarihler aşağıdakilerden hangisinde doğru verilmiştir ?</p><br>
+            <input type="radio" name="q2" value="23 Mart - 22 Eylül" onclick="control(4,'23 Mart - 22 Eylül')"> 23 Mart - 22 Eylül <br>
+            <input type="radio" name="q2" value="21 Mart - 23 Eylül"onclick="control(4,'21 Mart - 23 Eylül')"> 21 Mart - 23 Eylül <br>
+            <input type="radio"name="q2"value="23 Eylül - 21 Ekim "onclick="control(4,'23 Eylül - 21 Ekim ')"> 23 Eylül - 21 Ekim <br>
+            <input type="radio"name="q2" value="21 Mart - 21 Haziran" onclick="control(4,'21 Mart - 21 Haziran')"> 21 Mart - 21 Haziran <br>
+          </div>
+          <div class="soru1">
+            <p><strong>5)</strong>  Dünya’nın kendi etrafındaki ve Güneş etrafındaki hareketi şekildeki gibi numaralanarak verilmiştir.</p> <br>
+            <img src="sınavfen2.png"><br>
+            <input type="radio" name="q5" value="Dünya’nın kendi etrafındaki hareketi 2 numara ile gösterilmiştir." onclick="control(5,'Dünya’nın kendi etrafındaki hareketi 2 numara ile gösterilmiştir.')"> Dünya’nın kendi etrafındaki hareketi 2 numara ile gösterilmiştir. <br>
+            <input type="radio" name="q5" value="2 numaralı hareketini bir günde tamamlar."onclick="control(5,'2 numaralı hareketini bir günde tamamlar.')"> 2 numaralı hareketini bir günde tamamlar. <br>
+            <input type="radio"name="q5"value="1 numaralı hareketi sonucu gece ve gündüz oluşur."onclick="control(5,'1 numaralı hareketi sonucu gece ve gündüz oluşur.')"> 1 numaralı hareketi sonucu gece ve gündüz oluşur. <br>
+            <input type="radio"name="q5" value="Dünya’nın Güneş etrafındaki hareketi 1 numara ile gösterilmiştir." onclick="control(5,'Dünya’nın Güneş etrafındaki hareketi 1 numara ile gösterilmiştir.')">Dünya’nın Güneş etrafındaki hareketi 1 numara ile gösterilmiştir. <br>
+          </div>
+          <div class="soru1">
+            <p><strong>6)</strong>  Dünya' mız kendi ekseni etrafındaki dönüşünü ne kadar sürede tamamlar ?</p><br>
+            <input type="radio" name="q6" value="1 Yıl" onclick="control(6,'1 Yıl')"> 1 Yıl <br>
+            <input type="radio" name="q6" value="30 Gün"onclick="control(6,' 30 Gün')"> 30 Gün <br>
+            <input type="radio"name="q6"value="24 Saat"onclick="control(6,'24 Saat')"> 24 Saat <br>
+            <input type="radio"name="q6" value="1 Hafta" onclick="control(6,'1 Hafta')"> 1 Hafta <br>
+          </div>
+          <div class="soru1">
+            <p> <strong>7)</strong> Canlıların yaşamını sürdürebilmesi büyüyüp gelişmesi için tüketilen içecek ve yiyeceklere ne ad verilir ?</p><br>
+            <input type="radio" name="q7" value="Besin" onclick="control(7,'Besin')"> Besin <br>
+            <input type="radio" name="q7" value="Yemek yeme"onclick="control(7,'Yemek yeme')"> Yemek yeme <br>
+            <input type="radio"name="q7"value="Beslenme"onclick="control(7,'Beslenme')"> Beslenme <br>
+            <input type="radio"name="q7" value="Tüketim" onclick="control(7,'Tüketim')" > Tüketim <br>
+          </div>
+          <div class="soru1">
+            <p><strong>8)</strong> Marketten satın aldığımız paketlenmiş ürünlerde neye dikkat etmeliyiz ?</p><br>
+            <input type="radio" name="q8" value="İçerdiği protein" onclick="control(8,'İçerdiği protein')"> İçerdiği protein <br>
+            <input type="radio" name="q8" value="Son kullanma tarihi"onclick="control(8,'Son kullanma tarihi')"> Son kullanma tarihi <br>
+            <input type="radio"name="q8"value="Paketin rengine"onclick="control(8,'Paketin rengine')"> Paketin rengine <br>
+            <input type="radio"name="q8" value="Bir pakkete bulunan ürün sayısına" onclick="control(8,'Bir pakkete bulunan ürün sayısına')"> Bir pakkete bulunan ürün sayısına <br />
+          </div>
+          <div class="soru1">
+            <p><strong>9)</strong> Dünya güneş etrafındaki bir turunu ne kadar sürede bitirir ?</p><br>
+            <input type="radio" name="q9" value="1 Yıl" onclick="control(9,'1 Yıl')"> 1 Yıl <br>
+            <input type="radio" name="q9" value="3 Ay"onclick="control(9,'3 Ay')"> 3 Ay <br>
+            <input type="radio"name="q9"value="31 Gün"onclick="control(9,'31 Gün')"> 31 Gün<br>
+            <input type="radio"name="q9" value="24 Saat" onclick="control(9,'24 Saat')"> 24 Saat <br>
+          </div>
+          <div class="soru1">
+            <p><strong>10)</strong> Doğada sıvı halde bulunan tek metal maden aşağıdakilerden hangisinde <strong>doğru </strong> verilmiştir ?</p><br>
+            <input type="radio" name="q10" value="Cıva" onclick="control(10,'Cıva')"> Cıva  <br>
+            <input type="radio" name="q10" value="Bakır"onclick="control(10,'Bakır')"> Bakır <br>
+            <input type="radio"name="q10"value="Altın"onclick="control(10,'Altın')"> Altın <br>
+            <input type="radio"name="q10" value="Kurşun" onclick="control(10,'Kurşun')"> Kurşun <br>
+          </div>
+    </div>
+    <div class="sekilbuton">
+      <a href="sınavfen2.html"><span>Sonraki</span></a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
