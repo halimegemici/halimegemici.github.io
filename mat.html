@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BİLİM UZAYI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <!--MENÜ-->
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-rocket"></i>BİLİM UZAYI</a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="ders.html" class="desktop-link"><i class="fa fa-book" aria-hidden="true"></i>Dersler</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Dersler</label>
+              <ul>
+                <li><a href="mat.html">Matematik</a></li>
+                <li><a href="fen.html">Fen Bilimleri</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sinavlar.html"><i class="fa fa-calculator" aria-hidden="true"></i>Sınavlar</a>
+            </li>
+            <li>
+              <a href="dersnotlari.html"><i class="fa-solid fa-clipboard"></i>Ders Notları</a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><i class="fa fa-users" aria-hidden="true"></i>Hakkımızda</a>
+            </li>
+            <li>
+              <a href="iletisim.html"><i class="fa fa-phone" aria-hidden="true"></i>İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!--Search Bar-->
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Öğrenmeye Başla..." required>
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+    <!--İÇERİK-->
+    <div class="dene">
+      <div class="container1">
+        <div class="box">
+          <div class="icon">01</div>
+          <div class="content1">
+            <h3>1. ÜNİTE KONU ANLATIMLARI</h3>
+            <ul>
+              <li><a href="dogal.html"> DOĞAL SAYILAR</a></li>
+              <li><a href="ritmik.html">RİTMİK SAYMALAR</a></li>
+              <li><a href="yuvarlama.html"> YUVARLAMA</a></li>
+              <li><a href="sıralama.html">SAYILARI SIRALAMA</a></li>
+              <li><a href="oruntu.html">SAYI ÖRÜNTÜLERİ</a></li>
+              <li><a href="zihinden.html"> ZİHİNDEN ÇIKARMA İŞLEMİ</a></li>
+            </ul>
+            <a href="dogal.html" id="ogren">Öğrenelim</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">02</div>
+          <div class="content1">
+            <h3>2. ÜNİTE KONU ANLATIMLARI</h3>
+            <br>
+            <ul>
+              <li><a href="toplam.html">Toplamı Tahmin Etme</a></li>
+              <li>
+                <a href="zihindentoplam.html">Zihinden Toplama İşlemi </a>
+              </li>
+              <li><a href="fark.html"> Farkı Tahmin Etme </a></li>
+            </ul>
+            <br>
+            <br>
+            <a href="toplam.html" id="ogren">Öğrenelim</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">03</div>
+          <div class="content1">
+            <h3>3. ÜNİTE KONU ANLATIMLARI</h3>
+            <br>
+            <p>
+              Bu sayfamızda tarafından güncellenen yeni müfredat kazanımlarına
+              uygun <strong>çarpma işlemi </strong> konu anlatımını
+              bulabilirsiniz.
+            </p>
+            <br>
+            <a href="carpma.html" id="ogren">Öğrenelim</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Kaydırma Tuşu-->
+    <a href="mat.html" id="backtotop">
+      <i class="fa-regular fa-hand-pointer"></i>
+    </a>
+  </body>
+</html>
