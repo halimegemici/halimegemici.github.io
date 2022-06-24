@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BİLİM UZAYI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <!--MENÜ-->
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-rocket"></i>BİLİM UZAYI</a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="ders.html" class="desktop-link"><i class="fa fa-book" aria-hidden="true"></i>Dersler</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Dersler</label>
+              <ul>
+                <li><a href="mat.html">Matematik</a></li>
+                <li><a href="fen.html">Fen Bilimleri</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sinavlar.html"><i class="fa fa-calculator" aria-hidden="true"></i>Sınavlar</a>
+            </li>
+            <li>
+              <a href="dersnotlari.html"><i class="fa-solid fa-clipboard"></i>Ders Notları</a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><i class="fa fa-users" aria-hidden="true"></i>Hakkımızda</a>
+            </li>
+            <li>
+              <a href="iletisim.html"><i class="fa fa-phone" aria-hidden="true"></i>İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!--Search Bar-->
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Öğrenmeye Başla..." required>
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+    <!--İÇERİK-->
+    <div class="kenarlık" style="height: 2400px">
+      <h1 id="dogal1" style="top: 15px; left: 500px; color: #ff3333">
+        SAYI ÖRÜNTÜLERİ
+      </h1>
+      <h2 id="dogal1" style="top: 85px; color: #ff3333">Örüntü Nedir?</h2>
+      <p id="dogal1" style="top: 135px; background: orangered">
+        Belirli bir kuralı takip eden şekil veya sayı dizilerine örüntü denir.
+      </p>
+      <p id="dogal1" style="top: 185px">
+        Bir sayı örüntüsünün kuralı bulunurken art arda gelen sayılar arasındaki
+        ilişki belirlenebilir. Daha iyi anlayabilmek için aşağıdaki şekilleri
+        inceleyelim.
+      </p>
+      <img src="oruntu.jpg" style="display: flex; position: absolute; top: 235px; left: 300px">
+      <p id="dogal1" style="top: 475px">
+        Şekillere baktığımızda kare sayılarının belirli bir kurala göre
+        arttığını görüyoruz. Örüntünün terimlerini yazalım.
+      </p>
+      <h3 id="dogal1" style="top: 525px; color: #3352ff">Terim Nedir?</h3>
+      <p id="dogal1" style="top: 575px">
+        Bir sayı örüntüsünü oluşturan her sayıya terim denir.
+      </p>
+      <ol style="position: absolute; left: 55px; top: 625px">
+        <li>Terim → 5 Kare</li>
+        <li>Terim → 5 + 4 = 9 Kare</li>
+        <li>Terim → 9 + 4 = 13 Kare</li>
+        <li>Terim → 13 + 4 = 17 Kare</li>
+        <li>Terim → ?</li>
+      </ol>
+      <p id="dogal1" style="top: 775px">
+        Örüntüdeki birinci terim 5, ikinci terim 9’dur. İkinci terim, birinci
+        terimden 4 fazladır. Üçüncü terim de ikinci terimden 4 fazladır.
+        Örüntüdeki her bir terim, bir önceki terimden 4 fazladır. Öyleyse
+        örüntünün kuralı, “Sayılar 4 artarak devam etmektedir.” olarak
+        belirtilebilir.
+      </p>
+      <h2 id="dogal1" style="top: 850px; color: #ff3333">
+        Artan (Genişleyen) Sayı Örüntüleri
+      </h2>
+      <h3 id="dogal1" style="top: 900px; color: #3352ff">Örnek:</h3>
+      <img
+        src="oruntu1.jpg"
+        style="display: flex; position: absolute; top: 955px; left: 50px">
+      <p id="dogal1" style="top: 1085px">
+        Birinci adımı 9 olan ve her adımda 8 artan sayı örüntüsünü oluşturalım
+        ve oluşturduğumuz örüntünün kuralını açıklayalım. <br />
+        <br>
+
+        Sayı örüntüsünün 1. adımı 9 ile başlatılmıştır. Her adımdaki sayı, bir
+        önceki adımdan 8 artarak örüntü oluşturulmuştur. <br />
+        <br>
+
+        Sayı örüntüsünü yazalım.
+      </p>
+      <p id="dogal1" style="top: 1235px; left: 250px; font-size: 25px">
+        9 → 17 → 25 → 33 → 41 → 49
+      </p>
+      <p id="dogal1" style="top: 1285px">
+        Sayı örüntüsü, artan bir sayı örüntüsüdür. Sayı örüntüsünün terimlerini
+        yazalım.
+      </p>
+      <ol style="position: absolute; left: 55px; top: 1335px">
+        <li>Terim → 9</li>
+        <li>Terim → 9 + 8 = 17</li>
+        <li>Terim → 17 + 8 = 25</li>
+        <li>Terim → 25 + 8 = 33</li>
+        <li>Terim → 33 + 8 = 41</li>
+        <li>Terim → 41 + 8 = 49</li>
+      </ol>
+      <p id="dogal1" style="top: 1500px">
+        Sayı örüntüsünün kuralı, “Sayılar, 8 artarak devam etmektedir.” olarak
+        belirtilebilir.
+      </p>
+      <h2 id="dogal1" style="top: 1550px; color: #ff3333">
+        Azalan (Daralan) Sayı Örüntüleri
+      </h2>
+      <h3 id="dogal1" style="top: 1600px; color: #3352ff">Örnek:</h3>
+      <img src="oruntu2.jpg" style="display: flex; position: absolute; top: 1650px; left: 50px">
+      <p id="dogal1" style="top: 1800px">
+        Sayı örüntüsünün 1. adımı 72 ile başlatılmıştır. Her adımdaki sayı, bir
+        önceki adımdan 6 eksiltilerek örüntü oluşturulmuştur. <br>
+        <br>
+
+        Sayı örüntüsünü yazalım.
+      </p>
+      <p id="dogal1" style="top: 1900px; left: 250px; font-size: 25px">
+        72 → 66 → 60 → 54 → 48 → 42
+      </p>
+      <p id="dogal1" style="top: 1950px">
+        Sayı örüntüsü, azalan bir sayı örüntüsüdür. Sayı örüntüsünün terimlerini
+        yazalım.
+      </p>
+      <ol style="position: absolute; left: 55px; top: 2000px">
+        <li>Terim → 72</li>
+        <li>Terim → 72 - 6 = 66</li>
+        <li>Terim → 66 - 6 = 60</li>
+        <li>Terim → 60 - 6 = 54</li>
+        <li>Terim → 54 - 6 = 48</li>
+        <li>Terim → 48 - 6 = 42</li>
+      </ol>
+      <p id="dogal1" style="top: 2170px">
+        Sayı örüntüsünün kuralı, “Sayılar, 6 azalarak devam etmektedir.” olarak
+        belirtilebilir.
+      </p>
+      <a
+        href="zihinden.html"
+        id="ogren"
+        style="display: flex; position: absolute; top: 2300px; right: 50px"
+        >Sonraki konu &#x27A1; zihinden Çıkarma İşlemi
+      </a>
+      <a
+        href="sıralama.html"
+        id="ogren"
+        style="display: flex; position: absolute; top: 2300px; left: 50px">
+        Önceki Konu &#11013; Sayıları Sıralama</a>
+    </div>
+    <!--Kaydırma Tuşu-->
+    <a href="oruntu.html" id="backtotop">
+      <i class="fa-regular fa-hand-pointer"></i>
+    </a>
+  </body>
+</html>
