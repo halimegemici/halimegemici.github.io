@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BİLİM UZAYI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <!--MENÜ-->
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-rocket"></i>BİLİM UZAYI</a>
+            <p class="slogan">&#x1F3AF;" 4. Sınıf Matematik ve Fen Bilimleri Derslerine Dair Her Şey Burada!"&#x1F3AF;</p>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="ders.html" class="desktop-link"><i class="fa fa-book" aria-hidden="true"></i>Dersler</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Dersler</label>
+              <ul>
+                <li><a href="mat.html">Matematik</a></li>
+                <li><a href="fen.html">Fen Bilimleri</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sinavlar.html"><i class="fa fa-calculator" aria-hidden="true"></i>Sınavlar</a>
+            </li>
+            <li>
+              <a href="dersnotlari.html"><i class="fa-solid fa-clipboard"></i>Ders Notları</a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><i class="fa fa-users" aria-hidden="true"></i>Hakkımızda</a>
+            </li>
+            <li>
+              <a href="iletisim.html"><i class="fa fa-phone" aria-hidden="true"></i>İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!--Search Bar-->
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Öğrenmeye Başla..." required>
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+  </div>
+  <!--Anasayfa içerik-->
+  <div class="anasayfa2">
+     <div class="lacivert">
+    <div class="beyaz">
+      <div class="siyah">
+          <div class="mavi" data-text="sayı">
+              <img src="iconsmath.png">
+          </div>
+          <div class="sari">
+              <div>
+                  <h3>Matematik &#x1F4D0;</h3>
+                  <p>Bu sayfamızda Milli Eğitim Bakanlığı (MEB) tarafından yayımlanan güncel yeni müfredat kapsamında ilkokul 4. Sınıf Matematik dersi konu anlatımlarını bulabilir ve inceleyebilirsiniz.</p>
+                  <a href="mat.html">Öğrenelim</a>
+              </div>
+          </div>
+      </div>
+      <div class="siyah">
+          <div class="mavi" data-text="bilim">
+              <img src="iconstube.png">
+          </div>
+          <div class="sari">
+              <div>
+                  <h3>Fen Bilimleri &#x1F9E0;</h3>
+                  <p>Bu sayfamızda Milli Eğitim Bakanlığı (MEB) tarafından yayımlanan yeni müfredat kapsamında ilkokul 4. Sınıf Fen Bilimleri dersi tüm kazanımların konu anlatımlarını bulabilirsiniz.</p>
+                  <a href="fen.html">Öğrenelim</a>
+              </div>
+          </div>
+      </div>
+      <div class="siyah">
+          <div class="mavi" data-text="eğitim">
+              <img src="iconstudent.png">
+          </div>
+          <div class="sari">
+              <div>
+                  <h3>Ders Notları &#x1F4D2;</h3>
+                  <p>Bu sayfamızda eğlenerek öğrenebileceğiniz ders notlarına ulaşabilirsiniz.</p>
+                  <a href="dersnotlari.html">Öğrenelim</a>
+              </div>
+          </div>
+      </div>
+      <div class="siyah">
+          <div class="mavi" data-text="sınav">
+              <img src="iconsbook.png">
+          </div>
+          <div class="sari">
+              <div>
+                  <h3>Sınavlar &#9997;</h3>
+                  <p>Konu anlatımlarının sonunda kendinizi değerlendirebileceğiniz sınav sorularına bu sayfamızdan ulaşbilirsiniz. Başarılar dileriz.</p>
+                  <a href="sinavlar.html">Öğrenelim</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--İÇERİK-->
+    <img src="sayfa5.png" style="display:flex; position: absolute;top:150px ;left:400px;width: 700px;">
+    <img src="sayfa4.png" style="display:flex; position: absolute; top:70px ;left:20px;width: 350px;">
+    <div class="sayfa1">
+      <div class="loader">
+        <div class="rocket">
+          <i class="fa-solid fa-rocket"></i>
+          <i class="fa-solid fa-cloud" style="--i: 0"></i>
+          <i class="fa-solid fa-cloud" style="--i: 1"></i>
+          <i class="fa-solid fa-cloud" style="--i: 2"></i>
+          <i class="fa-solid fa-cloud" style="--i: 3"></i>
+        </div>
+        <span> <i></i></span>
+      </div>
+    </div>
+  </div>
+    <!--Kaydırma Tuşu-->
+    <a href="index.html" id="backtotop">
+      <i class="fa-regular fa-hand-pointer"></i>
+    </a>
+  </body>
+</html>
