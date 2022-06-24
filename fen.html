@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BİLİM UZAYI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <!--MENÜ-->
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-rocket"></i>BİLİM UZAYI</a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="ders.html" class="desktop-link"><i class="fa fa-book" aria-hidden="true"></i>Dersler</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Dersler</label>
+              <ul>
+                <li><a href="mat.html">Matematik</a></li>
+                <li><a href="fen.html">Fen Bilimleri</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sinavlar.html"><i class="fa fa-calculator" aria-hidden="true"></i>Sınavlar</a>
+            </li>
+            <li>
+              <a href="dersnotlari.html"><i class="fa-solid fa-clipboard"></i>Ders Notları</a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><i class="fa fa-users" aria-hidden="true"></i>Hakkımızda</a>
+            </li>
+            <li>
+              <a href="iletisim.html"><i class="fa fa-phone" aria-hidden="true"></i>İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!--Search Bar-->
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Öğrenmeye Başla..." required>
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+    <!--İÇERİK-->
+    <div class="dene" style="
+        background: url(fen1.jpg);
+        background-position: bottom;
+        background-size: cover;
+      ">
+      <div class="container1">
+        <div class="box">
+          <div class="icon">01</div>
+          <div class="content1">
+            <h3>Yer Kabuğunun Yapısı</h3>
+            <br>
+            <p>
+              İlkokul 4. sınıf Fen Bilimleri dersi Yer Kabuğu ve Dünya’mızın
+              Hareketleri Ünitesini bu sayfada bulabilir ve inceleyebilirsiniz.
+            </p>
+            <br>
+            <br>
+            <a href="yer.html" id="ogren">Öğrenelim</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">02</div>
+          <div class="content1">
+            <h3>Dünyamızın Hareketleri</h3>
+            <p style="font-size: 14px">
+              Bu sayfamızda MEB tarafından güncellenen yeni müfredata uygun
+              ilkokul 4. sınıf Fen Bilimleri dersi Yer Kabuğu ve Dünya’mızın
+              Hareketleri Ünitesi Dünya’nın Dönme ve Dolanma Hareketleri ve
+              Dünya’nın Hareketleri Sonuçları konu anlatımını bulabilir ve
+              inceleyebilirsiniz.
+            </p>
+            <a href="dunya.html" id="ogren">Öğrenelim</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">03</div>
+          <div class="content1">
+            <h3>Besinler ve Özellikleri</h3>
+            <p>
+              İlkokul 4. sınıf Fen Bilimleri dersi Besinlerimiz Ünitesi
+              Besinlerin Gerekliliği konu anlatımını,Besin İçerikleri ve
+              Görevleri konu anlatımı,Sağlıklı Bir Yaşam İçin Besinler konu
+              anlatımını bulabilir ve inceleyebilirsiniz.
+            </p>
+            <a href="besin.html" id="ogren">Öğrenelim</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Kaydırma Tuşu-->
+    <a href="fen.html" id="backtotop">
+      <i class="fa-regular fa-hand-pointer"></i>
+    </a>
+  </body>
+</html>
