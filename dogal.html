@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BİLİM UZAYI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <!--MENÜ-->
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-rocket"></i>BİLİM UZAYI</a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="ders.html" class="desktop-link"><i class="fa fa-book" aria-hidden="true"></i>Dersler</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Dersler</label>
+              <ul>
+                <li><a href="mat.html">Matematik</a></li>
+                <li><a href="fen.html">Fen Bilimleri</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sinavlar.html"><i class="fa fa-calculator" aria-hidden="true"></i>Sınavlar</a>
+            </li>
+            <li>
+              <a href="dersnotlari.html"><i class="fa-solid fa-clipboard"></i>Ders Notları</a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><i class="fa fa-users" aria-hidden="true"></i>Hakkımızda</a>
+            </li>
+            <li>
+              <a href="iletisim.html"><i class="fa fa-phone" aria-hidden="true"></i>İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!--Search Bar-->
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Öğrenmeye Başla..." required>
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+    <!--İÇERİK-->
+    <div class="kenarlık" style="height: 3200px">
+      <h1 id="dogal1" style="top: 15px; left: 500px; color: #ff3333">
+        DOĞAL SAYILAR
+      </h1>
+      <p id="dogal1" style="top: 75px; text-indent: 35px">
+        3. sınıfta üç basamaklı doğal sayıları öğrenmiştik. En büyük üç
+        basamaklı doğal sayının 999 olduğunu biliyoruz.
+      </p>
+      <h1 id="dogal1" style="top: 125px; color: #3352ff">
+        Dört Basamaklı Doğal Sayılar
+      </h1>
+      <p id="dogal1" style="top: 175px; left: 100px; background: orangered; font-size: 30px">
+        999+1=1000
+      </p>
+      <p id="dogal1" style="top: 235px">
+        1000 sayısı dört basamaklı bir sayıdır.
+      </p>
+      <img src="dogal.jpg" style="display: flex; position: absolute; top: 290px; left: 100px">
+      <p id="dogal1" style="top: 530px">
+        Tabloda 0 (sıfır) birlik, 0 (sıfır) onluk, 0 (sıfır) yüzlük ve 1 binlik
+        vardır. Bu sayının okunuşu “bin”, yazılışı ise “1000” şeklindedir. 1000
+        en küçük dört basamaklı sayıdır. 9999 sayısı da dört basamaklı en büyük
+        doğal sayıdır.
+      </p>
+      <h3 id="dogal1" style="top: 600px; color: #ff3333">Örnek:</h3>
+      <p id="dogal1" style="top: 650px">
+        Ağrı Dağı’nın yüksekliğini gösteren “beş bin yüz otuz yedi” doğal
+        sayısını modelleyelim.
+      </p>
+      <img src="dogal1.jpg" style="display: flex; position: absolute; top: 700px; left: 100px">
+      <p id="dogal1" style="top: 1060px">
+        5137 sayısı dört rakamdan oluşmaktadır. Bu sayı, dört basamaklı doğal
+        sayıdır.
+      </p>
+      <h1 id="dogal1" style="top: 1125px; color: #3352ff">
+        Beş Basamaklı Doğal Sayılar
+      </h1>
+      <p id="dogal1" style="top: 1200px">
+        <b> “Elli altı bin iki yüz altmış bir” </b>doğal sayısını basamak
+        tablosunda gösterelim.
+      </p>
+      <img src="dogal2.jpg" style="display: flex; position: absolute; top: 1250px; left: 100px">
+      <p id="dogal1" style="top: 1580px">
+        <b> 56 261 </b> sayısı beş rakamdan oluşmaktadır. Bu sayı, beş basamaklı
+        doğal sayıdır.
+      </p>
+      <h1 id="dogal1" style="top: 1640px; left: 200px; color: #ff3333">Doğal Sayıların Bölük, Basamak ve Basamak Değerleri</h2>
+      <p id="dogal1" style="top: 1700px">Doğal sayıların içinde rakamların yazıldığı yerlere basamak adı verilir. Basamak değeri, doğal sayıları oluşturan rakamların bulunduğu basamağa göre aldığı değerdir.</p>
+      <h2 id="dogal1" style="top: 1770px; color: #3352ff">Bölük Nedir?</h2>
+      <p id="dogal1" style="top: 1830px">Beş ve beşten fazla basamaklı doğal sayıları kolay okuyup yazabilmek için rakamlar sağdan sola doğru üçerli gruplara ayrılır. Bu grupların her biri “ bölük ”tür. <br> <br>
+      Birler bölüğü ; birler, onlar ve yüzler basamaklarından oluşur. Binler bölüğü  ise binler, on binler ve yüz binler basamaklarından oluşur. <br> <br>
+      Not:  Beş ve daha fazla basamaklı sayılar rakamlarla yazılırken bölükler arasında boşluk bırakılır.</p>
+      <h3 id="dogal1" style="top: 1970px; color: #3352ff">Örnek:</h3>
+      <p id="dogal1" style="top: 1972px; left:110px;"> 48 675, 364 711</p>
+      <h1 id="dogal1" style="top: 2020px;color: #ff3333">Altı Basamaklı Doğal Sayılar</h1>
+      <p id="dogal1" style="top: 2080px;"> <b>“Dört yüz otuz yedi bin doksan üç”</b> doğal sayısını basamak tablosunda gösterelim. doğal sayısını basamak tablosunda gösterelim.</p>
+      <img src="dogal3.jpg"  style="display: flex; position: absolute; top: 2150px; left: 100px">
+      <p id="dogal1" style="top: 2480px;">Sayıları okurken önce bölük içindeki sayı okunur. Sonuna bölük ismi eklenir. Ama birler bölüğü okunurken sonuna bölük ismi eklenmez.Dört yüz otuz yedi bin doksan üç 437 093  sayısı altı rakamdan oluşmaktadır. Bu sayı, altı basamaklı doğal sayıdır.</p>
+      <h1 id="dogal1" style="top: 2540px; left:400px; color: #ff3333">Doğal Sayıları Çözümleme</h1>
+      <p id="dogal1" style="top: 2600px;">Bir doğal sayıyı rakamlarının basamak değerlerinin toplamı şeklinde yazmaya, bu doğal sayıya   <b>"çözümleme" </b> denir.</p>
+      <h3 id="dogal1" style="top: 2650px; color: #3352ff">Örnek:</h3>
+      <p id="dogal1" style="top:2653px; left:110px;"> <b>234 560</b>  sayısını, sayıdaki rakamların basamak değerlerini yazarak çözümleyelim.</p>
+      <img src="dogal4.jpg"  style="display: flex; position: absolute; top: 2720px; left: 100px">
+      <a href="ritmik.html" id="ogren" style="display: flex; position: absolute; top: 3050px; right: 50px"
+      >Sonraki konu &#x27A1;  Ritmik Saymalar </a>
+    </div>
+    <!--Kaydırma Tuşu-->
+    <a href="dogal.html" id="backtotop">
+      <i class="fa-regular fa-hand-pointer"></i>
+    </a>
+  </body>
+</html>
