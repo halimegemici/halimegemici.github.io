@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BİLİM UZAYI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <!--MENÜ-->
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-rocket"></i>BİLİM UZAYI</a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="ders.html" class="desktop-link"><i class="fa fa-book" aria-hidden="true"></i>Dersler</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Dersler</label>
+              <ul>
+                <li><a href="mat.html">Matematik</a></li>
+                <li><a href="fen.html">Fen Bilimleri</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sinavlar.html"><i class="fa fa-calculator" aria-hidden="true"></i>Sınavlar</a>
+            </li>
+            <li>
+              <a href="dersnotlari.html"><i class="fa-solid fa-clipboard"></i>Ders Notları</a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><i class="fa fa-users" aria-hidden="true"></i>Hakkımızda</a>
+            </li>
+            <li>
+              <a href="iletisim.html"><i class="fa fa-phone" aria-hidden="true"></i>İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!--Search Bar-->
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Öğrenmeye Başla..." required>
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+    <!--İÇERİK-->
+    <div class="kenarlık" style="height: 2000px">
+      <h1 id="dogal1" style="top: 15px; left: 300px; color: #ff3333">
+        SAYILARI ONLUĞA VE YÜZLÜĞE YUVARLAMA
+      </h1>
+      <p id="dogal1" style="top: 75px; text-indent: 35px">
+        Geçen sene üç basamaklı doğal sayıları en yakın onluğa ve yüzlüğe
+        yuvarlama konusunu öğrenmiştik.
+      </p>
+      <h2 id="dogal1" style="top: 125px; color: #ff3333">
+        Sayıları En Yakın Onluğa Yuvarlama
+      </h2>
+      <p id="dogal1" style="top: 175px">
+        Sayıları en yakın onluğa yuvarlarken birler basamağına bakılır. Sayının
+        birler basamağındaki rakam 5’ten küçükse onlar basamağındaki rakam aynen
+        yazılır. Birler basamağına sıfır yazılır. Sayının birler basamağındaki
+        rakam 5 ya da 5’ten büyükse onlar basamağındaki rakam 1 artırılır.
+        Birler basamağına sıfır yazılır.
+      </p>
+      <h3 id="dogal1" style="top: 255px; color: #3352ff">Örnek:</h3>
+      <p id="dogal1" style="top: 300px">
+        <b> 445 </b> sayısını en yakın onluğa yuvarlayalım.
+      </p>
+      <img src="yuvarlama.jpg" style="display: flex; position: absolute; top: 360px; left: 300px">
+      <p id="dogal1" style="top: 580px">
+        445 doğal sayısı 440 ile 450 sayıları arasındadır. 445 sayısının birler
+        basamağında 5 rakamı vardır. O halde 445 sayısını 450‘ye yuvarlarız.
+      </p>
+      <h3 id="dogal1" style="top: 630px; color: #3352ff">Örnek:</h3>
+      <p id="dogal1" style="top: 695px">
+        248 sayısını en yakın onluğa yuvarlayalım.
+      </p>
+      <img src="yuvarlama1.jpg" style="display: flex; position: absolute; top: 720px; left: 300px">
+      <p id="dogal1" style="top: 865px">
+        248 doğal sayısı 240 ile 250 sayıları arasındadır. 248 sayısı 250
+        sayısına 2 birim, 240 sayısına 8 birim uzaklıktadır. 248 sayısı, 250
+        sayısına daha yakındır. O halde 248 sayısını 250‘ye yuvarlarız.
+      </p>
+      <h2 id="dogal1" style="top: 935px; color: #ff3333">
+        Sayıları En Yakın Yüzlüğe Yuvarlama
+      </h2>
+      <p id="dogal1" style="top: 995px">
+        Sayıları en yakın yüzlüğe yuvarlarken onlar basamağına bakılır. Sayının
+        onlar basamağındaki rakam 5’ten küçükse, yüzler basamağındaki rakam
+        aynen yazılır. Onlar ve birler basamağına sıfır yazılır. Sayının onlar
+        basamağındaki rakam 5 ya da 5’ten büyükse yüzler basamağındaki rakam 1
+        artırılır. Onlar ve birler basamağına sıfır yazılır.
+      </p>
+      <h3 id="dogal1" style="top: 1095px; color: #3352ff">Örnek:</h3>
+      <p id="dogal1" style="top: 1145px">
+        Bursa’da bulunan Uludağ’ın yüksekliği 2543 metredir. 2543 sayısını en
+        yakın yüzlüğe yuvarlayalım.
+      </p>
+      <img src="yuvarlama2.jpg" style="display: flex; position: absolute; top: 1240px; left: 300px">
+      <p id="dogal1" style="top: 1330px">
+        2543 doğal sayısı 2500 ile 2600 sayıları arasındadır. 2543 sayısının,
+        onlar basamağında 4 rakamı oluğu için sayı 2500 sayısına daha yakındır.
+        O halde 2543 sayısını 2500‘e yuvarlarız.
+      </p>
+      <h3 id="dogal1" style="top: 1400px; color: #3352ff">Örnek:</h3>
+      <img src="yuvarlama3.jpg" style="display: flex; position: absolute; top: 1470px; left: 300px">
+      <p id="dogal1" style="top: 1580px">
+        2543 doğal sayısı 2500 ile 2600 sayıları arasındadır. 2543 sayısının,
+        onlar basamağında 4 rakamı oluğu için sayı 2500 sayısına daha yakındır.
+        O halde 2543 sayısını 2500‘e yuvarlarız.
+      </p>
+      <a href="sıralama.html" id="ogren" style="display: flex; position: absolute; top: 1780px; right: 50px">
+        Sonraki konu &#x27A1; Sayıları Sıralama
+      </a>
+      <a href="ritmik.html" id="ogren" style="display: flex; position: absolute; top: 1780px; left: 50px">
+        Önceki Konu &#11013; Ritmik Saymalar</a>
+    </div>
+    <!--Kaydırma Tuşu-->
+    <a href="yuvarlama.html" id="backtotop">
+      <i class="fa-regular fa-hand-pointer"></i>
+    </a>
+  </body>
+</html>
