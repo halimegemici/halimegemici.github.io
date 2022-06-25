@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BİLİM UZAYI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <!--MENÜ-->
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-rocket"></i>BİLİM UZAYI</a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="ders.html" class="desktop-link"><i class="fa fa-book" aria-hidden="true"></i>Dersler</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Dersler</label>
+              <ul>
+                <li><a href="mat.html">Matematik</a></li>
+                <li><a href="fen.html">Fen Bilimleri</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sinavlar.html"><i class="fa fa-calculator" aria-hidden="true"></i>Sınavlar</a>
+            </li>
+            <li>
+              <a href="dersnotlari.html"><i class="fa-solid fa-clipboard"></i>Ders Notları</a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><i class="fa fa-users" aria-hidden="true"></i>Hakkımızda</a>
+            </li>
+            <li>
+              <a href="iletisim.html"><i class="fa fa-phone" aria-hidden="true"></i>İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!--Search Bar-->
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Öğrenmeye Başla..." required>
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+    <!--İÇERİK-->
+    <div class="sinavimiz">
+      <div class="board">
+        <h3 id="time">Süre:</h3>
+        <h3 id="point">Puan:</h3>
+        <p id="qp1">1</p>
+        <p id="qp2">2</p>
+        <p id="qp3">3</p>
+        <p id="qp4">4</p>
+        <p id="qp5">5</p>
+        <p id="qp6">6</p>
+        <p id="qp7">7</p>
+        <p id="qp8">8</p>
+        <p id="qp9">9</p>
+        <p id="qp10">10</p>
+      </div>
+      <div class="anasoru">
+        <div class="soru">
+          <p>
+            <strong
+              >1) 5A 54B yandaki sayı beş basamaklı bir sayıdır. A yerine 4, B
+              yerine de 8 yazılırsa sayının okunuşu nasıl olur?</strong>
+          </p>
+          <br>
+          <input
+            type="radio"
+            name="q1"
+            value="ellidortbinkirksekiz"
+            onclick="control(1,'ellidortbinkirksekiz')">
+          Elli dört bin kırk sekiz <br>
+          <input
+            type="radio"
+            name="q1"
+            value="ellibinbesyuzkirksekiz"
+            onclick="control(1,'ellibinbesyuzkirksekiz')">
+          Elli bin beş yüz kırk sekiz <br>
+          <input
+            type="radio"
+            name="q1"
+            value="ellidortbinbesyuzkirksekiz"
+            onclick="control(1,'ellidortbinbesyuzkirksekiz')">
+          Elli dört bin beş yüz kırk sekiz <br>
+          <input
+            type="radio"
+            name="q1"
+            value="ellibinsekiz"
+            onclick="control(1,'ellibinsekiz')">
+          Elli bin sekiz <br>
+        </div>
+        <div class="soru">
+          <p>
+            <strong>
+              2) 32005 sayının okunuşu aşağıdakilerden hangisidir?</strong>
+          </p>
+          <br>
+          <input
+            type="radio"
+            name="q2"
+            value="otuzikibin"
+            onclick="control(2,'otuzikibin')">
+          Otuz iki bin <br>
+          <input
+            type="radio"
+            name="q2"
+            value="otuzikibinbes"
+            onclick="control(2,'otuzikibinbes')">
+          Otuz iki bin beş <br>
+          <input
+            type="radio"
+            name="q2"
+            value="ucyuzyirmibes"
+            onclick="control(2,'ucyuzyirmibes')">
+          Üç yüz yirmi beş <br>
+          <input
+            type="radio"
+            name="q2"
+            value="ucnibikiyuzbes"
+            onclick="control(2,'ucnibikiyuzbes')">
+          Üç bin iki yüz beş <br>
+        </div>
+        <div class="soru">
+          <p>
+            <strong>
+              3) Okunuşu ''Dört yüz elli altı bin dokuz yüz beş'' olan sayı
+              aşağıdakilerden hangisidir?</strong>
+          </p>
+          <br>
+          <input
+            type="radio"
+            name="q3"
+            value="456005"
+            onclick="control(3,'456005')">
+          456005 <br>
+          <input
+            type="radio"
+            name="q3"
+            value="459605"
+            onclick="control(3,'459605')">
+          459605 <br>
+          <input
+            type="radio"
+            name="q3"
+            value="456905"
+            onclick="control(3,'456905')">
+          456905 <br>
+          <input
+            type="radio"
+            name="q3"
+            value="456095"
+            onclick="control(3,'456095')">
+          456095 <br>
+        </div>
+        <div class="soru">
+          <p>
+            <strong>
+              4) 2A4 5B8 Yandaki sayı altı basamaklı bir sayıdır. Buna göre A
+              ve B basamağının adı nedir?</strong>
+          </p>
+          <br>
+          <input
+            type="radio"
+            name="q4"
+            value="binleryuzlerbasamagi"
+            onclick="control(4,'binleryuzlerbasamagi')">
+          Binler - Yüzler basamağı <br>
+          <input
+            type="radio"
+            name="q4"
+            value="onbinleronlarbasamagi"
+            onclick="control(4,'onbinleronlarbasamagi')">
+          On binler - Onlar basamağı <br>
+          <input
+            type="radio"
+            name="q4"
+            value="yuzlerbinleryuzlerbasamagi"
+            onclick="control(4,'yuzlerbinleryuzlerbasamagi')">
+          yüz binler - Yüzler basamağı <br>
+          <input
+            type="radio"
+            name="q4"
+            value="binlerbirlerbasamagi"
+            onclick="control(4,'binlerbirlerbasamagi')">
+          Binler - Birler basamağı <br>
+        </div>
+        <div class="soru">
+          <p>
+            <strong>
+              5) 428570 sayısında bulunan 2 rakamının basamak değeri
+              kaçtır?</strong>
+          </p>
+          <br>
+          <input type="radio" name="q5" value="20" onclick="control(5,'20')">
+          20 <br>
+          <input
+            type="radio"
+            name="q5"
+            value="200"
+            onclick="control(5,'200')">
+          200 <br>
+          <input
+            type="radio"
+            name="q5"
+            value="2000"
+            onclick="control(5,'2000')">
+          2000 <br>
+          <input
+            type="radio"
+            name="q5"
+            value="20000"
+            onclick="control(5,'20000')">
+          20000 <br>
+        </div>
+        <div class="soru">
+          <p>
+            <strong>
+              6) 5 - 7 - 8 - 2 - 4 yandaki rakamlarla yazılabilecek en küçük
+              beş basamaklı doğal sayı aşağıdakilerden hangisidir?</strong>
+          </p>
+          <br>
+          <input
+            type="radio"
+            name="q6"
+            value="25478"
+            onclick="control(6,'25478')">
+          25 478 <br>
+          <input
+            type="radio"
+            name="q6"
+            value="24578"
+            onclick="control(6,'24578')">
+          24 578 <br>
+          <input
+            type="radio"
+            name="q6"
+            value="27485"
+            onclick="control(6,'27485')">
+          27 485 <br>
+          <input
+            type="radio"
+            name="q6"
+            value="48752"
+            onclick="control(6,'48752')">
+          48 752 <br>
+        </div>
+        <div class="soru">
+          <p>
+            <strong
+              >7) 1452, 1371, 1458, 1542 yandaki sayıların büyükten küçüğe doğru
+              sıralanışı aşağıdakilerden hangisinde doğru olarak
+              verilmiştir?</strong>
+          </p>
+          <br>
+          <input
+            type="radio"
+            name="q7"
+            value="1542 - 1452 - 1458 - 1371"
+            onclick="control(7,'1542 - 1452 - 1458 - 1371')">
+          1542 - 1452 - 1458 - 1371 <br>
+          <input
+            type="radio"
+            name="q7"
+            value="1542 - 1371 - 1452 - 1458"
+            onclick="control(7,'1542 - 1371 - 1452 - 1458')">
+          1542 - 1371 - 1452 - 1458 <br>
+          <input
+            type="radio"
+            name="q7"
+            value="1542 - 1458 - 1452 - 1371"
+            onclick="control(7,'1542 - 1458 - 1452 - 1371')">
+          1542 - 1458 - 1452 - 1371 <br>
+          <input
+            type="radio"
+            name="q7"
+            value="1371 - 1452 - 1458 - 1542"
+            onclick="control(7,'1371 - 1452 - 1458 - 1542')">
+          1371 - 1452 - 1458 - 1542 <br>
+        </div>
+        <div class="soru">
+          <p>
+            <strong
+              >8) 280 371 doğal sayısını on binler basamağındaki rakamın basamak
+              değeri aşağıdakilerden hangisidir?</strong>
+          </p>
+          <br>
+          <input
+            type="radio"
+            name="q8"
+            value="8000"
+            onclick="control(8,'8000')">
+          8000 <br>
+          <input
+            type="radio"
+            name="q8"
+            value="800"
+            onclick="control(8,'800')">
+          800 <br>
+          <input type="radio" name="q8" value="80" onclick="control(8,'80')" />
+          80 <br>
+          <input
+            type="radio"
+            name="q8"
+            value="80000"
+            onclick="control(8,'80000')">
+          80 000 <br>
+        </div>
+        <div class="soru">
+          <p>
+            <strong
+              >9) Beş basamaklı bir doğal sayıda aşağıdaki basamaklardan hangisi
+              bulunmaz?</strong>
+          </p>
+          <br>
+          <input
+            type="radio"
+            name="q9"
+            value="onbinler"
+            onclick="control(9,'onbinler')">
+          On binler <br>
+          <input
+            type="radio"
+            name="q9"
+            value="yuzler"
+            onclick="control(9,'yuzler')">
+          Yüzler <br>
+          <input
+            type="radio"
+            name="q9"
+            value="binler"
+            onclick="control(9,'binler')">
+          Binler <br>
+          <input
+            type="radio"
+            name="q9"
+            value="yuzbinler"
+            onclick="control(9,'yuzbinler')">
+          Yüz binler <br>
+        </div>
+        <div class="soru">
+          <p>
+            <strong
+              >10) 36A 7A3 sayısı altı basamaklı bir doğal sayıdır. A yerine
+              yazılacak rakamların basamak değeri 4040'tır. Buna göre A yerine
+              gelecek rakam kaçtır?</strong>
+          </p>
+          <br>
+          <input type="radio" name="q10" value="4" onclick="control(10,'4')">
+          4 <br>
+          <input type="radio" name="q10" value="8" onclick="control(10,'8')">
+          8 <br>
+          <input
+            type="radio"
+            name="q10"
+            value="12"
+            onclick="control(10,'12')">
+          12 <br>
+          <input type="radio" name="q10" value="7" onclick="control(10,'7')">
+          7 <br>
+        </div>
+      </div>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>
