@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BİLİM UZAYI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <!--MENÜ-->
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-rocket"></i>BİLİM UZAYI</a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="ders.html" class="desktop-link"><i class="fa fa-book" aria-hidden="true"></i>Dersler</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Dersler</label>
+              <ul>
+                <li><a href="mat.html">Matematik</a></li>
+                <li><a href="fen.html">Fen Bilimleri</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sinavlar.html"><i class="fa fa-calculator" aria-hidden="true"></i>Sınavlar</a>
+            </li>
+            <li>
+              <a href="dersnotlari.html"><i class="fa-solid fa-clipboard"></i>Ders Notları</a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><i class="fa fa-users" aria-hidden="true"></i>Hakkımızda</a>
+            </li>
+            <li>
+              <a href="iletisim.html"><i class="fa fa-phone" aria-hidden="true"></i>İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!--Search Bar-->
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Öğrenmeye Başla..." required>
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+    <!--İÇERİK-->
+    <div class="kenarlık" style="height: 1800px">
+      <h1 id="toplam1" style="top: 15px; left: 400px; color: #ff3333">
+        TOPLAMI TAHMİN ETME
+      </h1>
+      <p id="toplam1" style="top: 75px; text-indent: 35px">
+        Günlük yaşamımızda sık sık sayıların toplamını tahmin etme durumunda
+        kalırız. Bunun için çeşitli yöntemler kullanabiliriz. Şimdi bu
+        yöntemlerle yapılmış toplamı tahmin etme örneklerini inceleyelim.
+      </p>
+      <h3 id="toplam1" style="top: 145px; color: #3352ff">Örnek:</h3>
+      <p id="toplam1" style="top: 195px; text-indent: 35px">
+        Temel Reis, hamsi yakalamak için hafta sonu denize açılmış. Cumartesi
+        günü 4641 kg, pazar günü 1978 kg hamsi yakalamıştır. Temel Reis’in hafta
+        sonu yakaladığı hamsilerin toplamını tahmin edelim. <br>
+        <br>
+        İşlem sonucunu üç farklı yolla tahmin edelim.
+      </p>
+      <h2 id="toplam1" style="top: 320px; color: #ff3333">
+        Toplamı Tahmin Etme 1. Yöntem
+      </h2>
+      <p id="toplam1" style="top: 370px">
+        Toplananları en yakın onluklara yuvarlayalım.
+      </p>
+      <img src="toplam.png" style="display: flex; position: absolute; top: 420px; left: 30px">
+      <p id="toplam1" style="top: 600px; left: 250px; font-size: 25px">
+        6620 - 6619 = 1
+      </p>
+      <p id="toplam1" style="top: 650px">
+        Tahminimiz, işlem sonucundan 1 fazladır.
+      </p>
+      <h2 id="toplam1" style="top: 700px; color: #ff3333">
+        Toplamı Tahmin Etme 2. Yöntem
+      </h2>
+      <p id="toplam1" style="top: 750px">
+        Toplananları en yakın yüzlüğe yuvarlayalım.
+      </p>
+      <img src="toplam1.png" style="display: flex; position: absolute; top: 800px; left: 30px">
+      <p id="toplam1" style="top: 1000px; left: 250px; font-size: 25px">
+        6619 - 6600 = 19
+      </p>
+      <p id="toplam1" style="top: 1050px">
+        Tahminimiz, işlem sonucundan 19 eksiktir.
+      </p>
+      <h2 id="toplam1" style="top: 1100px; color: #ff3333">
+        Toplamı Tahmin Etme 3. Yöntem
+      </h2>
+      <p id="toplam1" style="top: 1150px">
+        Toplananların binler basamaklarındaki rakamların basamak değerleri ile
+        işlem yapalım.
+      </p>
+      <img src="toplam2.png" style="display: flex; position: absolute; top: 1200px; left: 30px">
+      <p id="toplam1" style="top: 1400px; left: 250px; font-size: 25px">
+        6619 - 5000 = 1619
+      </p>
+      <p id="toplam1" style="top: 1450px">
+        Tahminimiz, işlem sonucundan 1619 eksiktir. <br>
+        <br>
+        En yakın tahmini sayıları en yakın onluğa yuvarlayarak bulduk. Sayıların
+        toplamını tahmin ederken sürenin uzunluğuna göre istediğimiz yöntemi
+        kullanabiliriz.
+      </p>
+      <a href="zihindentoplam.html" id="ogren" style="display: flex; position: absolute; top: 1600px; right: 50px">
+        Sonraki konu &#x27A1; Zihinden Toplama İşlemi
+      </a>
+    </div>
+    <!--Kaydırma Tuşu-->
+    <a href="toplam.html" id="backtotop">
+      <i class="fa-regular fa-hand-pointer"></i>
+    </a>
+  </body>
+</html>
